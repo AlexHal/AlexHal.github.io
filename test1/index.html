@@ -18,13 +18,20 @@
     <p></p>
     <b><em>hey</em></b>
     <br><br>
+    <button onclick="myFunction()">Replace document</button>
+
+<script>
+function myFunction() {
+    location.replace("http://www.w3schools.com")
+}
+</script>
     <button onclick="msc()">next page</button>
     <script type="text/javascript">
-      function msf() [
-        location.replace("2.htm");
-      ]
+      function msf() {
+        window.location.assign("/2.html")
+      }
     </script>
-    <form method="LINK" action="2.htm">
+    <form method="LINK" action="2.html">
       <input type="submit" value="Next Page">
     </form>
   </body>
