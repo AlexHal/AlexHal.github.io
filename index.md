@@ -8,17 +8,5 @@ title: Projects
 {% for repo in site.data.repos %}
 ## [{{ repo.name }}]({{ repo.html_url }})
 - **README**:
-  <div class="readme-container">
-    <div class="readme-preview" id="preview-{{ repo.name }}">
-      {{ repo.readme | truncate: 25 }}
-    </div>
-    <div class="readme-full" id="full-{{ repo.name }}" style="display: none;">
-      {{ repo.readme }}
-    </div>
-    <button class="read-more-button" onclick="toggleReadme('{{ repo.name }}')">Read More</button>
-  </div>
+  {{ repo.readme | truncate: 200 }}
 {% endfor %}
-
-
-<link rel="stylesheet" href="/assets/css/style.css">
-<script src="/assets/js/script.js"></script>
