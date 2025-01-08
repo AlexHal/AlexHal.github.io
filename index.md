@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projecrs
+title: Projects
 ---
 
 # Welcome to My Portfolio
