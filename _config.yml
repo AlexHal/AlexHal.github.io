@@ -13,7 +13,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      scripts:
-        - /assets/js/script.js
       stylesheets:
         - /assets/css/style.css
+      scripts:
+        - /assets/js/script.js

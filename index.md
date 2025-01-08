@@ -18,3 +18,7 @@ title: Projects
     <button class="read-more-button" onclick="toggleReadme('{{ repo.name }}')">Read More</button>
   </div>
 {% endfor %}
+
+
+<link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/script.js"></script>
