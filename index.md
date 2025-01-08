@@ -3,10 +3,10 @@ layout: default
 title: Projects
 ---
 
-# My GitHub Repositories
+# Welcome to My Projects
 
-{% for repo in site.data.repos %}
-## [{{ repo.name }}]({{ repo.html_url }})
-- **README**:
-  {{ repo.readme | truncate: 200 }}
-{% endfor %}
+This is a test page to confirm the Minimal theme styling works.
+
+- Item 1
+- Item 2
+- Item 3
