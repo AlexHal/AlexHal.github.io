@@ -10,7 +10,7 @@ title: Projects
 - **README**:
   <div class="readme-container">
     <div class="readme-preview" id="preview-{{ repo.name }}">
-      {{ repo.readme | truncate: 200 }}
+      {{ repo.readme | truncate: 25 }}
     </div>
     <div class="readme-full" id="full-{{ repo.name }}" style="display: none;">
       {{ repo.readme }}
