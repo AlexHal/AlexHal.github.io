@@ -12,4 +12,4 @@ Hello! I'm a developer and this is my portfolio. Here are some of my projects:
 ## [{{ repo.name }}]({{ repo.html_url }})
 - **README Preview**:
   <pre>{{ repo.readme | truncate: 500 }}</pre>
-{% endfor %
+{% endfor %}
