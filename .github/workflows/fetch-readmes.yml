@@ -1,0 +1,39 @@
+name: Fetch Repository READMEs
+
+on:
+  push:
+    paths:
+      - repos.txt # Trigger when repos.txt is updated
+  workflow_dispatch: # Allow manual runs
+
+jobs:
+  update-readmes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch READMEs
+        run: |
+          python fetch_readmes.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass the GitHub-provided token to the script
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add _data/repos.json
+          git commit -m "Update READMEs via GitHub Actions"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
