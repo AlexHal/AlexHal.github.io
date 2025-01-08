@@ -1,25 +1,23 @@
-<style>
-  .readme-container {
-    margin-bottom: 1.5rem;
-  }
+.readme-container {
+  margin-bottom: 1.5rem;
+}
 
-  .read-more-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
+.read-more-button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
 
-  .read-more-button:hover {
-    background-color: #005fa3;
-  }
+.read-more-button:hover {
+  background-color: #005fa3;
+}
 
-  .readme-preview,
-  .readme-full {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-</style>
+.readme-preview,
+.readme-full {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

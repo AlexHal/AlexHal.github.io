@@ -6,3 +6,14 @@ plugins:
 
 title: My Projects
 description: A showcase of my coding projects, competitions, and achievements.
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      scripts:
+        - /assets/js/script.js
+      stylesheets:
+        - /assets/css/style.css
