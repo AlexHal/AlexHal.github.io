@@ -2,7 +2,7 @@
   {
     "name": "Simple-Version-Control",
     "html_url": "https://github.com/AlexHal/Simple-Version-Control",
-    "readme": "A lightweight C++ application for managing file versions using a linked list-based version control system. This tool allows users to track, compare, and restore previous versions of a file while maintaining simplicity.\n\n## Features\n\n- **Version Control**: \n  - Add file content as new versions only if changes are detected.\n  - Remove specific versions and renumber remaining versions.\n  - Restore any version to the original file.\n- **Comparison**: Compare two versions line-by-line, highlighting differences.\n- **Search**: Search all versions for a specific keyword.\n- **Persistence**: Save and load version data from a file for session continuity.\n\n## How It Works\n\n- Each file version is stored in a linked list, with unique hashes for change detection.\n- Users interact through a simple menu for adding, removing, printing, comparing, and searching versions.\n- File data and metadata are saved to a persistent storage file.\n\n## How to Run\n\n1. Compile the program:\n   ```bash\n   g++ -o file_versioning SVC.cpp\n"
+    "readme": "A lightweight C++ application for managing file versions using a linked list-based version control system. This tool allows users to track, compare, and restore previous versions of a file while maintaining simplicity.\n## Features\n- **Version Control**: \n  - Add file content as new versions only if changes are detected.\n  - Remove specific versions and renumber remaining versions.\n  - Restore any version to the original file.\n- **Comparison**: Compare two versions line-by-line, highlighting differences.\n- **Search**: Search all versions for a specific keyword.\n- **Persistence**: Save and load version data from a file for session continuity.\n\n## How It Works\n\n- Each file version is stored in a linked list, with unique hashes for change detection.\n- Users interact through a simple menu for adding, removing, printing, comparing, and searching versions.\n- File data and metadata are saved to a persistent storage file.\n\n## How to Run\n\n1. Compile the program:\n   ```bash\n   g++ -o file_versioning SVC.cpp\n"
   },
   {
     "name": "Thread-Scheduler",
@@ -15,6 +15,8 @@
     "readme": "A custom Unix shell implemented in C, showcasing core functionalities of a command-line interface and process management.\n\n## Features\n\n- **Command Execution**: Executes user commands using `fork()` and `execvp()` with support for foreground and background processes.\n- **Built-In Commands**: Includes:\n  - `cd`: Change directories.\n  - `pwd`: Print current directory.\n  - `echo`: Display messages.\n  - `exit`: Terminate the shell.\n  - `jobs`: List background processes.\n  - `fg`: Bring background jobs to the foreground.\n- **Redirection**: Redirects command output to files using `dup()`.\n- **Piping**: Implements command chaining with pipes via `pipe()`.\n\n## Technologies\n\n- **Language**: C\n- **Platform**: Linux/Unix\n- **Key System Calls**: `fork()`, `execvp()`, `pipe()`, `dup()`, `waitpid()`\n\n## How to Run\n\n1. Clone this repository.\n2. Compile the shell using `gcc`:\n   ```bash\n   gcc -o my_shell shell.c\n"
   }
 ]
+
+
 
 
 
