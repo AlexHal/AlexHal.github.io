@@ -4,3 +4,11 @@ plugins:
 
 title: My Projects
 description: A showcase of my coding projects, competitions, and achievements.
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      stylesheets:
+        - /assets/css/style.css
