@@ -9,10 +9,10 @@ description: |
             This page hosts projects featured in my CV, along with additional works. Certain CV projects are not included here due to course-related restrictions or confidentiality.
 
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      stylesheets:
-        - /assets/css/style.css
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "pages"
+#     values:
+#       stylesheets:
+#         - /assets/css/style.css
