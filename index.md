@@ -8,26 +8,28 @@ title: Projects
 # My GitHub Repositories
 
 {% for repo in site.data.repos %}
-
 ## [{{ repo.name }}]({{ repo.html_url }})
 <div class="code-block-container">
+  <!-- Preview Block -->
   <div class="code-block-preview styled-code-block" id="preview-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}">
     {% assign normalized_readme = repo.readme | replace: '\n', '
 ' %}
-{% assign lines = normalized_readme | split: '
+    {% assign lines = normalized_readme | split: '
 ' %}
 
     {% if lines.size > 0 %}
-    ```
+    <pre>
       <div class="blurred-line">{{ lines[0] }}</div> <!-- First line -->
-
-    ```
-    {%endif%}
-  
-  
-  <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
-    ```{{ repo.readme | markdownify }}```
+    </pre>
+    {% endif %}
   </div>
+
+  <!-- Full Content Block -->
+  <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
+    <pre>{{ repo.readme | markdownify }}</pre>
+  </div>
+
+  <!-- Toggle Button -->
   <button class="read-more-button" id="button-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" onclick="toggleReadme('{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}')">Read More</button>
 </div>
 {% endfor %}
