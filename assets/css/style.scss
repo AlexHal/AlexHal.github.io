@@ -24,11 +24,18 @@
 // }
 
 /* Blurred line styling */
+
+// #f8f8f8); //
+
+
 .blurred-line {
+  display: inline-block;
+  background: linear-gradient(to right, rgba(45, 45, 45, 0.5), rgba(45, 45, 45, 1));
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   filter: blur(4px);
-  opacity: 0.6;
-  background: linear-gradient(transparent, #f8f8f8); //
-  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* Read More button styling */

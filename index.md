@@ -27,7 +27,7 @@ title: Projects
 
   <!-- Full Content Block -->
   <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
-    <pre>{{ repo.readme | markdownify }}</pre>
+    <div class="highlight">{{ repo.readme | markdownify }}</div>
   </div>
 
   <!-- Toggle Button -->
