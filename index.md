@@ -1,3 +1,11 @@
+
+
+title: "My Projects"
+description:
+            Explore a curated collection of my coding projects, competition highlights, and notable achievements.<br><br><br>
+
+            This page hosts projects featured in my CV, along with additional works. Certain CV projects are not included here due to course-related restrictions or confidentiality.
+
 # My GitHub Repositories
 
 {% for repo in site.data.repos %}
