@@ -12,7 +12,11 @@ title: Projects
 ## [{{ repo.name }}]({{ repo.html_url }})
 <div class="code-block-container">
   <div class="code-block-preview styled-code-block" id="preview-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}">
-    {% assign lines = repo.readme | split: '\n' %}
+    {% assign normalized_readme = repo.readme | replace: '\n', '
+' %}
+{% assign lines = normalized_readme | split: '
+' %}
+
     {% if lines.size > 0 %}
     <p>Number of lines: {{ lines.size }}</p>
     <div>
