@@ -1,10 +1,4 @@
 
-<!-- 
----
-layout: default
-title: Projects
---- -->
-
 # My GitHub Repositories
 
 {% for repo in site.data.repos %}
