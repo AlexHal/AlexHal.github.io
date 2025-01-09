@@ -18,17 +18,17 @@ title: Projects
 ' %}
 
     {% if lines.size > 0 %}
-    <p>Number of lines: {{ lines.size }}</p>
-    <div>
-      <pre>{{ lines[0] }}</pre> <!-- First line -->
+
+    ```
+      {{ lines[0] }} <!-- First line -->
       {% if lines.size > 1 %}
       <pre class="blurred-line">{{ lines[1] }}</pre> <!-- Blurred second line -->
       {% endif %}
-    </div>
+    ```
     {% endif %}
   </div>
   <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
-    <pre>{{ repo.readme | markdownify }}</pre>
+    ```{{ repo.readme | markdownify }}```
   </div>
   <button class="read-more-button" id="button-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" onclick="toggleReadme('{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}')">Read More</button>
 </div>
