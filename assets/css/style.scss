@@ -31,19 +31,21 @@
 .blurred-line {
   position: relative;
   display: inline-block;
-  color: transparent; /* Hide the actual text */
-  filter: blur(4px); /* Apply blur to the text */
-  overflow: hidden;
-  white-space: nowrap; /* Prevent text wrapping */
-
-  /* Gradient fog effect */
+  color: #000; /* Visible text color */
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 0%, /* Fully transparent at the top */
-    rgba(255, 255, 255, 0.6) 70%, /* Semi-transparent fog in the middle */
-    rgba(255, 255, 255, 0.9) 100% /* Almost opaque at the bottom */
+    rgba(0, 0, 0, 1) 0%, /* Fully visible at the top */
+    rgba(0, 0, 0, 0.5) 50%, /* Semi-transparent in the middle */
+    rgba(248, 248, 248, 0) 100% /* Fully transparent at the bottom */
   );
+  -webkit-background-clip: text;
+  background-clip: text;
 
+  /* Blur only the gradient (not the visible part) */
+  filter: blur(4px);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for clarity */
+  overflow: hidden;
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Read More button styling */
