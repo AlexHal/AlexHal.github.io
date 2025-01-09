@@ -18,9 +18,10 @@ title: Projects
 ' %}
 
     {% if lines.size > 0 %}
-    ```
+    <div class = "highlight">
       <div class="blurred-line">{{ lines[0] }}</div> <!-- First line -->
-    ```
+    </div>
+    
     {% endif %}
   </div>
 
