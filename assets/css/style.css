@@ -9,20 +9,7 @@
   position: relative;
 }
 
-/* Preview text with blur effect */
-.readme-preview {
-  display: inline;
-}
-
-.readme-blur {
-  display: inline-block;
-  filter: blur(4px);
-  opacity: 0.5;
-  background: linear-gradient(transparent, white);
-  padding-left: 5px;
-}
-
-/* Full README styling */
+/* Shared styling for both preview and full README */
 .styled-readme {
   background-color: #f8f9fa; /* Light gray background */
   border: 1px solid #d6d8db; /* Subtle border */
@@ -34,7 +21,15 @@
   font-family: "Courier New", Courier, monospace; /* Monospace font for code-like appearance */
   font-size: 0.9rem; /* Slightly smaller text size */
   color: #333; /* Darker text color for readability */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Recessed effect */
+}
+
+/* Preview-specific blur styling */
+.readme-blur {
+  filter: blur(4px);
+  opacity: 0.6;
+  background: linear-gradient(transparent, #f8f9fa);
+  display: inline-block;
 }
 
 /* Read More button styling */
