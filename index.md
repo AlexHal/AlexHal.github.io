@@ -18,15 +18,13 @@ title: Projects
 ' %}
 
     {% if lines.size > 0 %}
+    ```
+      <div class="blurred-line">{{ lines[0] }}</div> <!-- First line -->
 
     ```
-      {{ lines[0] }} <!-- First line -->
-      {% if lines.size > 1 %}
-      <pre class="blurred-line">{{ lines[1] }}</pre> <!-- Blurred second line -->
-      {% endif %}
-    ```
-    {% endif %}
-  </div>
+    {%endif%}
+  
+  
   <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
     ```{{ repo.readme | markdownify }}```
   </div>
