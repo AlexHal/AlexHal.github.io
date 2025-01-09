@@ -3,7 +3,8 @@ plugins:
   - jekyll-remote-theme
 
 title: My Projects
-description: A showcase of my coding projects, competitions, and achievements.
+description: Explore a curated collection of my coding projects, competition highlights, and notable achievements. \n \n This page hosts projects featured in my CV, along with additional works. Certain CV projects are not included here due to course-related restrictions or confidentiality.
+
 
 defaults:
   - scope:
