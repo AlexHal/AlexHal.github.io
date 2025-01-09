@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7CG47LLWV"></script>
 <script>
@@ -7,3 +9,6 @@
 
   gtag('config', 'G-L7CG47LLWV');
 </script>
+
+</head>
+</html?
