@@ -8,15 +8,18 @@ title: Projects
 # My GitHub Repositories
 
 {% for repo in site.data.repos %}
+
 ## [{{ repo.name }}]({{ repo.html_url }})
 <div class="code-block-container">
   <div class="code-block-preview styled-code-block" id="preview-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}">
     {% assign lines = repo.readme | split: '\n' %}
     {% if lines.size > 0 %}
-    <code>{{ lines[0] }}</code> <!-- First line -->
-    {% if lines.size > 1 %}
-    <code class="blurred-line">{{ lines[1] }}</code> <!-- Blurred second line -->
-    {% endif %}
+    <div>
+      <code>{{ lines[0] }}</code> <!-- First line -->
+      {% if lines.size > 1 %}
+      <code class="blurred-line">{{ lines[1] }}</code> <!-- Blurred second line -->
+      {% endif %}
+    </div>
     {% endif %}
   </div>
   <div class="code-block-full styled-code-block" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
