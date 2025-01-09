@@ -18,9 +18,9 @@ title: Projects
 ' %}
 
     {% if lines.size > 0 %}
-    <pre>
+    ```
       <div class="blurred-line">{{ lines[0] }}</div> <!-- First line -->
-    </pre>
+    ```
     {% endif %}
   </div>
 
