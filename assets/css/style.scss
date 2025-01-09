@@ -29,13 +29,21 @@
 
 
 .blurred-line {
+  position: relative;
   display: inline-block;
-  background: linear-gradient(to right, rgba(45, 45, 45, 0.5), rgba(45, 45, 45, 1));
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  filter: blur(4px);
+  color: transparent; /* Hide the actual text */
+  filter: blur(4px); /* Apply blur to the text */
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; /* Prevent text wrapping */
+
+  /* Gradient fog effect */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%, /* Fully transparent at the top */
+    rgba(255, 255, 255, 0.6) 70%, /* Semi-transparent fog in the middle */
+    rgba(255, 255, 255, 0.9) 100% /* Almost opaque at the bottom */
+  );
+
 }
 
 /* Read More button styling */
@@ -53,3 +61,6 @@
 .read-more-button:hover {
   background-color: #005fa3;
 }
+
+
+
