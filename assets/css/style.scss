@@ -6,9 +6,6 @@
 /* Container for the code block */
 .code-block-container {
   margin-bottom: 1.5rem;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  padding: 8px 15px;
 }
 
 /* Styling for the code block (both preview and full) */
@@ -34,7 +31,7 @@
 .blurred-line {
   position: relative;
   display: inline-block;
-  color: #000; /* Text color */
+
   filter: blur(2px); /* Apply slight blur for the foggy effect */
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -72,4 +69,9 @@
 }
 
 
-
+.styled-code-block {
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 8px 15px;
+  background-color: #f8f8f8;
+}
