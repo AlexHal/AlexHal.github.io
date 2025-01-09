@@ -15,9 +15,9 @@ title: Projects
     {% assign lines = repo.readme | split: '\n' %}
     {% if lines.size > 0 %}
     <div>
-      <code>{{ lines[0] }}</code> <!-- First line -->
+      <pre>{{ lines[0] }}</pre> <!-- First line -->  <!-- maybe one large pre? -->
       {% if lines.size > 1 %}
-      <code class="blurred-line">{{ lines[1] }}</code> <!-- Blurred second line -->
+      <pre class="blurred-line">{{ lines[1] }}</pre> <!-- Blurred second line -->
       {% endif %}
     </div>
     {% endif %}

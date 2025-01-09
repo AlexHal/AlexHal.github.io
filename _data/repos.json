@@ -15,3 +15,9 @@
     "readme": "A custom Unix shell implemented in C, showcasing core functionalities of a command-line interface and process management.\n\n## Features\n\n- **Command Execution**: Executes user commands using `fork()` and `execvp()` with support for foreground and background processes.\n- **Built-In Commands**: Includes:\n  - `cd`: Change directories.\n  - `pwd`: Print current directory.\n  - `echo`: Display messages.\n  - `exit`: Terminate the shell.\n  - `jobs`: List background processes.\n  - `fg`: Bring background jobs to the foreground.\n- **Redirection**: Redirects command output to files using `dup()`.\n- **Piping**: Implements command chaining with pipes via `pipe()`.\n\n## Technologies\n\n- **Language**: C\n- **Platform**: Linux/Unix\n- **Key System Calls**: `fork()`, `execvp()`, `pipe()`, `dup()`, `waitpid()`\n\n## How to Run\n\n1. Clone this repository.\n2. Compile the shell using `gcc`:\n   ```bash\n   gcc -o my_shell shell.c\n"
   }
 ]
+
+
+
+
+
+
