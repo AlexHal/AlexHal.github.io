@@ -6,6 +6,9 @@
 /* Container for the code block */
 .code-block-container {
   margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 8px 15px;
 }
 
 /* Styling for the code block (both preview and full) */
@@ -31,22 +34,26 @@
 .blurred-line {
   position: relative;
   display: inline-block;
-  color: #000; /* Visible text color */
-  background: linear-gradient(
+  color: #000; /* Text color */
+  filter: blur(2px); /* Apply slight blur for the foggy effect */
+  -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 0%, /* Fully visible at the top */
-    rgba(0, 0, 0, 0.5) 50%, /* Semi-transparent in the middle */
-    rgba(248, 248, 248, 0) 100% /* Fully transparent at the bottom */
+    rgba(0, 0, 0, 0.6) 60%, /* Semi-transparent in the middle */
+    rgba(0, 0, 0, 0) 100% /* Fully transparent at the bottom */
   );
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  /* Blur only the gradient (not the visible part) */
-  filter: blur(4px);
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for clarity */
-  overflow: hidden;
-  white-space: nowrap; /* Prevent wrapping */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%, /* Fully visible at the top */
+    rgba(0, 0, 0, 0.6) 60%, /* Semi-transparent in the middle */
+    rgba(0, 0, 0, 0) 100% /* Fully transparent at the bottom */
+  );
+  -webkit-mask-clip: text; /* Ensure the mask applies to the text */
+  mask-clip: text; /* Standard property for the mask */
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect; /* Ensures proper mask blending */
 }
+
 
 /* Read More button styling */
 .read-more-button {
