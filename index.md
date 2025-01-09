@@ -17,7 +17,7 @@ title: Projects
     <span class="readme-blur">{{ repo.readme | slice: 50, 20 }}</span>
   </span>
   <span class="readme-full" id="full-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" style="display: none;">
-    {{ repo.readme }}
+    {{ repo.readme | markdownify }}
   </span>
   <button class="read-more-button" id="button-{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}" onclick="toggleReadme('{{ repo.name | replace: ' ', '-' | replace: '/', '-' }}')">Read More</button>
 </div>
