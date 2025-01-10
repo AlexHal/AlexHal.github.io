@@ -2,3 +2,6 @@ Simple-Version-Control
 Thread-Scheduler
 Shell
 AlexHal.github.io
+Reproducibility-DNDT
+Classification-of-Image-Data
+Classification-of-Textual-Data
